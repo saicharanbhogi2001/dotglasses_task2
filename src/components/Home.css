@@ -1,0 +1,39 @@
+.home{
+    display: flex;
+    height:800px;
+   
+    background-color: orange;
+    justify-content: space-around;
+}
+.hleft{
+    flex:0.3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.hright{
+    flex:0.5;
+    border-color:aqua;
+}
+.hright img{
+    width:100%;
+    height:97%;
+}
+.hleft h1{
+    text-align: left;
+    font-size: 46px;
+}
+@media(max-width:600px)
+{
+   .home{
+       flex-direction: column;
+   } 
+   .hleft h1{
+       font-size: 34px;
+   }
+   .hleft{
+       margin-left: 30px;
+   }
+}
